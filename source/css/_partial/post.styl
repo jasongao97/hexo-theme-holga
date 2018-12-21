@@ -29,17 +29,22 @@
   .post-content {
     font-size: 0.8em;
 
-    h1, h2, h3 {
-      margin: 6px 0;
+    ul, ol {
+      list-style-type: none;
     }
 
-    pre {
-      margin: 12px 0;
-      padding: 8px 0;
+    h1, h2, h3 {
+      margin: 8px 0;
+    }
+
+    figure {
+      font-size: 0.9em;
+      margin: 16px 0;
       border-radius: 4px;
       background-color: #f5f7ff;
-
-      code {
+      
+      overflow-y: scroll;
+      table {
         padding-right: 20px;
       }
     }
@@ -54,8 +59,13 @@
       margin: 12px 0;
       font-style: italic;
 
-      ol, ul {
-        margin-left: 30px;
+      ol {
+        list-style-type: lower-roman;
+        margin-left: 24px;
+      }
+      ul {
+        list-style-type: circle;
+        margin-left: 24px;
       }
     }
   }

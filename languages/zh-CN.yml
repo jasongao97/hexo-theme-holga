@@ -1,7 +1,8 @@
 Menu:
   Home: 首页
   Archives: 归档
-  Dribbble: 追波
+  Dribbble: Dribbble
+  Github: Github
 
 Paginator:
   Prev: 上一页
