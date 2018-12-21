@@ -1,0 +1,16 @@
+<section class="posts">
+  <% page.posts.each(function (post) { %>
+    <article class="post" id="<%- url_for(post.path) %>">
+      <div class="post-title">
+        <%= post.title %>
+      </div>
+      <div class="post-content">
+        <%- truncate(strip_html(post.content), {length: 160}) %>
+      </div>
+      <div class="post-meta">
+        <span class="post-time"><%- date(post.date, "YYYY-MM-DD") %></span>
+      </div>
+    </article>
+  <% }) %>
+</section>
+<%- partial('_partial/paginator') %>
